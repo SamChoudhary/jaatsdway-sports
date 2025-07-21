@@ -1,0 +1,8 @@
+body {
+  font-family: sans-serif;
+  background: #f0f8ff;
+  color: #222;
+  padding: 1rem;
+}
+header, footer { text-align: center; }
+a { color: #0066cc; text-decoration: none; }

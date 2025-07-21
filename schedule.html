@@ -3,9 +3,9 @@ layout: default
 title: Schedule
 ---
 
-<h1>Match Schedule</h1>
+<h1>📅 Full Match Schedule</h1>
 <ul>
   {% for match in site.data.schedule %}
-    <li><strong>{{ match.date }}</strong> — {{ match.teams }} at {{ match.ground }}</li>
+    <li><strong>{{ match.date }}</strong>: {{ match.teams }} — {{ match.ground }}</li>
   {% endfor %}
 </ul>

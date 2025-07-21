@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{{ page.title }} - Jaatsdway Sports</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
   <header>
-    <h1><a href="/">Jaatsdway Sports</a></h1>
-    <nav>
-      <a href="/">Home</a> |
-      <a href="/schedule.html">Schedule</a> |
-      <a href="/grounds.html">Grounds</a> |
-      <a href="/gallery.html">Gallery</a> |
-      <a href="/news/">News</a>
-    </nav>
-    <hr>
+    <div class="container">
+      <h1><a href="/">Jaatsdway Sports</a></h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="/news/">News</a>
+        <a href="/schedule.html">Schedule</a>
+      </nav>
+    </div>
   </header>
-  <main>{{ content }}</main>
-  <footer><hr><p>&copy; 2025 Jaatsdway Sports</p></footer>
+  <main class="container">
+    {{ content }}
+  </main>
+  <footer>
+    <p>&copy; 2025 Jaatsdway Sports. All rights reserved.</p>
+  </footer>
 </body>
 </html>

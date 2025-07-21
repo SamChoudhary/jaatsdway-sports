@@ -3,11 +3,39 @@ layout: default
 title: Home
 ---
 
-<h1>Welcome to Jaatsdway Sports</h1>
-<p>We currently focus on Cricket and the Netherlands Cricket League (NCL).</p>
-<ul>
-  <li><a href="/schedule.html">View Schedule</a></li>
-  <li><a href="/grounds.html">Grounds & Locations</a></li>
-  <li><a href="/gallery.html">Gallery</a></li>
-  <li><a href="/news/">Latest News</a></li>
-</ul>
+<section class="hero">
+  <div class="hero-content">
+    <h1>🏏 Welcome to Jaatsdway Sports</h1>
+    <p>Your gateway to cricket in the Netherlands. Explore the NCL season, stay updated with news, fixtures, scores and more.</p>
+  </div>
+</section>
+
+<section class="schedule">
+  <h2>📅 Upcoming Matches</h2>
+  <div class="schedule-grid">
+    {% for match in site.data.schedule %}
+      <div class="card">
+        <strong>{{ match.date }}</strong><br>
+        <span>{{ match.teams }}</span><br>
+        <small>📍 {{ match.ground }}</small>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="scores">
+  <h2>📈 Live Scores (from Cricheros)</h2>
+  <iframe src="https://www.cricheros.com/live-scores" width="100%" height="400" frameborder="0"></iframe>
+</section>
+
+<section class="news">
+  <h2>📰 Latest News</h2>
+  <div class="news-grid">
+    {% for post in site.posts limit:3 %}
+      <div class="news-card">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

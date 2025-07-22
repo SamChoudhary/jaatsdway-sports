@@ -1,0 +1,58 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f8ff;
+  color: #1b1f3a;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+.hero {
+  background: linear-gradient(to right, #003366, #0055aa);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  font-size: 1.25rem;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffd700;
+  color: #002244;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.banners {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  background: #e6f0ff;
+}
+.banners img {
+  height: 250px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.intro {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.footer {
+  background-color: #001a33;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

@@ -1,15 +1,67 @@
 
-.logo-bar {
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  background: #f5f9ff;
+  color: #1a1a1a;
+}
+header {
+  background: #002244;
+  padding: 1rem;
+  color: white;
+}
+.navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding-bottom: 1rem;
+  justify-content: space-between;
 }
-.logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+.navbar nav a {
+  color: #aad8ff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.hero {
+  background: linear-gradient(to bottom right, #0055aa, #002244);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.hero-logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: gold;
+  color: #002244;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+.home-grid div {
   background: white;
-  padding: 4px;
+  padding: 1rem;
+  border-left: 5px solid #0052cc;
+  border-radius: 6px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+footer {
+  background: #001a33;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }

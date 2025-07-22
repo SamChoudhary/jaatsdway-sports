@@ -1,0 +1,11 @@
+---
+layout: default
+title: Fixtures
+---
+
+<h1>📅 NCL 2025 Fixture Schedule</h1>
+<ul class="fixture-list">
+  {% for match in site.data.schedule %}
+    <li><strong>{{ match.date }}</strong>: {{ match.teams }} @ {{ match.ground }}</li>
+  {% endfor %}
+</ul>
